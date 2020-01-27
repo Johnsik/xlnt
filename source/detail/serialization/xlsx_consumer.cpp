@@ -287,10 +287,10 @@ Cell parse_cell(xlnt::row_t row_arg, xml::parser *parser)
                     c.value += std::move(parser->value());
                 }
                 // <f> formula
-                else if (string_equal(parser->name(), "f"))
-                {
-                    c.formula_string += std::move(parser->value());
-                }
+                //else if (string_equal(parser->name(), "f"))
+                //{
+                //    c.formula_string += std::move(parser->value());
+                //}
             }
             break;
         }
